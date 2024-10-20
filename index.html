@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOK12 BROTHERHOOD</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="beranda/css/style.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="beranda/img/logo.jpeg" alt="" height="30" class="d-inline-block align-top">
+                BLOK12 BROTHERHOOD
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                        <a class="nav-link" href="#news">BERITA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">BERANDA</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-activity"></i> KEGIATAN KAMI
+                        </a>
+                        <ul class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="sport/sport.html"><i class="bi bi-trophy"></i> GO!!!BLOK SPORTS</a></li>
+                            <li><a class="dropdown-item" href="art/art.html"><i class="bi bi-palette"></i> GO!!!BLOK ART</a></li>
+                            <li><a class="dropdown-item" href="gowes/gowes.html"><i class="bi bi-bicycle"></i> GO!!!BLOK GOWES</a></li>
+                            <li><a class="dropdown-item" href="adventure/adventure.html"><i class="bi bi-compass"></i> GO!!!BLOK ADVENTURE</a></li>
+                            <li><a class="dropdown-item" href="class/class.html"><i class="bi bi-book"></i> GO!!!BLOK CLASS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">PESAN UNTUK KAMI</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--AKHIR NAVBAR-->
+
+    <!-- BERITA -->
+    <section id="news" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">BERITA BLOK12</h2>
+            <div class="position-relative">
+                <div class="news-slider overflow-hidden">
+                    <div class="news-container d-flex flex-nowrap">
+                        <div class="news-card card border-0 shadow-sm mx-2">
+                            <div class="position-relative">
+                                <img src="beranda/img/news/berita_sport_juara.jpeg" alt="Berita 1" class="card-img-top">
+                                <span class="position-absolute top-0 start-0 badge bg-warning m-2">GO!!!BLOK SPORT</span>
+                                <span class="position-absolute top-0 end-0 badge bg-success m-2">Baru</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Tim GO!!!BLOK SPORT Raih Juara 2 dalam Kompetisi Futsal</h5>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <p class="card-text text-muted mb-0 me-2"><small>15 Juli 2023</small></p>
+                                </div>
+                                <a href="#" class="btn btn-secondary read-more mt-auto" onclick="toggleDeskripsi('1')">Baca Selengkapnya</a>
+                                <div id="deskripsi-1" style="display: none;">
+                                    <p class="mt-3">Selamat kepada tim GO!!!BLOK SPORT yang berhasil meraih juara 2 dalam kompetisi olahraga futsal! Prestasi ini merupakan hasil kerja keras dan semangat juang yang luar biasa dari seluruh anggota tim. Momen kemenangan ini diabadikan dalam foto di atas, di mana para atlet kita terlihat bangga mengangkat piala mereka. Semoga pencapaian ini menjadi motivasi untuk terus berprestasi di masa depan. Ayo GO!!!BLOK SPORT, kita bisa!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-card card border-0 shadow-sm mx-2">
+                            <div class="position-relative">
+                                <img src="beranda/img/news/berita_adventure_gngede.jpeg" alt="Berita 2" class="card-img-top">
+                                <span class="position-absolute top-0 start-0 badge bg-warning m-2">GO!!!BLOK ADVENTURE</span>
+                                <span class="position-absolute top-0 end-0 badge bg-secondary m-2">Expired</span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Pendakian Epik: Tim GO!!!BLOK ADVENTURE Taklukkan Gunung Gede</h5>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <p class="card-text text-muted mb-0 me-2"><small>10 Juli 2023</small></p>
+                                </div>
+                                <a href="#" class="btn btn-secondary read-more mt-auto" onclick="toggleDeskripsi('2')">Baca Selengkapnya</a>
+                                <div id="deskripsi-2" style="display: none;">
+                                    <p class="mt-3">Tim GO!!!BLOK ADVENTURE berhasil menaklukkan Gunung Gede dalam pendakian epik mereka! Foto ini menangkap momen kebersamaan dan kebanggaan tim saat mencapai puncak. Dengan latar belakang pemandangan spektakuler dari ketinggian, para pendaki terlihat bahagia dan puas setelah menyelesaikan perjalanan menantang ini. Pendakian ke Gunung Gede bukan hanya tentang mencapai puncak, tapi juga tentang membangun kekompakan tim, menguji ketahanan diri, dan menikmati keindahan alam yang menakjubkan. Prestasi ini menjadi bukti semangat petualangan yang kuat dari komunitas Blok 12!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary prev-btn rounded-circle" aria-label="Berita sebelumnya">&lt;</button>
+                <button class="btn btn-primary next-btn rounded-circle" aria-label="Berita selanjutnya">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .news-slider {
+            position: relative;
+            width: 100%;
+            padding: 20px 0;
+            overflow: hidden;
+        }
+        .news-container {
+            transition: transform 0.5s ease;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .news-card {
+            flex: 0 0 100%;
+            max-width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-right: 16px;
+            display: flex;
+            flex-direction: column;
+        }
+        .news-card .card-body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .news-card .read-more {
+            margin-top: auto;
+        }
+        @media (min-width: 576px) {
+            .news-card {
+                flex: 0 0 calc(50% - 16px);
+                max-width: calc(50% - 16px);
+            }
+        }
+        @media (min-width: 992px) {
+            .news-card {
+                flex: 0 0 calc(33.333% - 16px);
+                max-width: calc(33.333% - 16px);
+            }
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+        }
+        .prev-btn, .next-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.523);
+            border: none;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        .prev-btn:hover, .next-btn:hover {
+            background-color: rgb(0, 0, 0);
+        }
+        .prev-btn {
+            left: 10px;
+        }
+        .next-btn {
+            right: 10px;
+        }
+        .text-truncate-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .card-body .d-flex {
+            align-items: center;
+        }
+        .card-body .d-flex p,
+        .card-body .d-flex span {
+            margin-bottom: 0;
+        }
+    </style>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.news-container');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            const cards = document.querySelectorAll('.news-card');
+            let currentIndex = 0;
+
+            function updateSlider() {
+                const cardWidth = cards[0].offsetWidth;
+                const maxIndex = cards.length - Math.floor(container.offsetWidth / cardWidth);
+                container.style.transform = `translateX(-${currentIndex * (cardWidth + 16)}px)`;
+                
+                prevBtn.style.display = currentIndex <= 0 ? 'none' : 'flex';
+                nextBtn.style.display = currentIndex >= maxIndex ? 'none' : 'flex';
+            }
+
+            function moveSlider(direction) {
+                const maxIndex = cards.length - Math.floor(container.offsetWidth / cards[0].offsetWidth);
+                currentIndex = Math.max(0, Math.min(currentIndex + direction, maxIndex));
+                updateSlider();
+            }
+
+            nextBtn.addEventListener('click', () => moveSlider(1));
+            prevBtn.addEventListener('click', () => moveSlider(-1));
+
+            window.addEventListener('resize', updateSlider);
+
+            updateSlider();
+
+            window.toggleDeskripsi = function(id) {
+                const deskripsi = document.getElementById(`deskripsi-${id}`);
+                const readMoreBtn = deskripsi.previousElementSibling;
+                const cardText = deskripsi.previousElementSibling.previousElementSibling;
+
+                if (deskripsi.style.display === 'none') {
+                    deskripsi.style.display = 'block';
+                    readMoreBtn.textContent = 'Sembunyikan';
+                    cardText.classList.remove('text-truncate-3');
+                } else {
+                    deskripsi.style.display = 'none';
+                    readMoreBtn.textContent = 'Baca Selengkapnya';
+                    cardText.classList.add('text-truncate-3');
+                }
+            }
+
+            let startX, isDragging = false, startPos;
+
+            container.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+                isDragging = true;
+                startPos = currentIndex * (cards[0].offsetWidth + 16);
+            });
+
+            container.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                const currentX = e.touches[0].clientX;
+                const diff = startX - currentX;
+                container.style.transform = `translateX(-${startPos + diff}px)`;
+            });
+
+            container.addEventListener('touchend', (e) => {
+                if (!isDragging) return;
+                isDragging = false;
+                const endX = e.changedTouches[0].clientX;
+                const diff = startX - endX;
+                if (Math.abs(diff) > 50) {
+                    moveSlider(diff > 0 ? 1 : -1);
+                } else {
+                    updateSlider();
+                }
+            });
+        });
+    </script>
+    <!-- END BERITA -->
+
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="py-5 text-center text-white position-relative">
+        <div class="container">
+            <div class="row justify-content-center align-items-center min-vh-100">
+                <div class="col-lg-8">
+                    <h1 style="text-transform: uppercase;" class="display-4 fw-bold mb-4">Selamat Datang di <br>Blok 12 <br>Brotherhood</h1>
+                    <p class="lead mb-5">Bersatu dalam Keberagaman, Peduli dalam Kebersamaan: Membangun Komunitas yang Kuat dan Harmonis di Blok 12</p>
+                    <div class="d-flex flex-column flex-md-row justify-content-center">
+                        <a href="warga/warga.html" class="btn btn-dark btn-lg mb-3 mb-md-0 me-md-3">MUDA-MUDI BLOK12</a>
+                        <!--<a href="konten/konten.html" class="btn btn-outline-light btn-lg">KONTEN BLOK12</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <style>
+        
+        #hero {
+            background-image: url('beranda/img/logo.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+        #hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        @media (max-width: 768px) {
+            #hero h1 {
+                font-size: 2.5rem;
+            }
+            #hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <!-- END HERO SECTION -->
+
+
+
+    <!--Layanan Section -->
+    <section id="layanan" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">UKW <br> (UNIT KEGIATAN WARGA)</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <img src="sport/sport.jpeg" alt="Logo UKW" class="img-fluid mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">GO!!!BLOK SPORTS</h5>
+                            <p class="card-text">Bergabunglah dengan GO!!! BLOK SPORTS untuk pengalaman olahraga yang seru, sehat, dan penuh semangat! Bersama-sama kita tingkatkan kebugaran dan raih prestasi.</p>
+                            <a href="sport/sport.html" class="btn btn-dark mt-3">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <img src="art/art.jpeg" alt="Logo UKW" class="img-fluid mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">GO!!!BLOK ART</h5>
+                            <p class="card-text">Ekspresikan kreativitasmu bersama GO!!!BLOK ART! Temukan keindahan dalam setiap goresan, warna, dan bentuk. Mari berkarya dan menginspirasi melalui seni yang memukau!</p>
+                            <a href="art/art.html" class="btn btn-dark mt-3">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <img src="gowes/gowes.jpeg" alt="Logo UKW" class="img-fluid mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">GO!!!BLOK GOWES</h5>
+                            <p class="card-text">Bergabunglah dengan GO!!!BLOK GOWES untuk petualangan bersepeda yang seru! Nikmati keindahan alam, tingkatkan kebugaran, dan bangun persahabatan di atas dua roda. Ayo gowes bersama kami!</p>
+                            <a href="gowes/gowes.html" class="btn btn-dark mt-3">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <img src="adventure/adventure.jpeg" alt="Logo UKW" class="img-fluid mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">GO!!!BLOK ADVENTURE</h5>
+                            <p class="card-text">Bergabunglah dengan GO!!!BLOK ADVENTURE untuk petualangan seru yang tak terlupakan! Jelajahi alam liar, taklukkan puncak gunung, dan temukan keindahan tersembunyi bersama kami. Siapkan nyali dan semangat Anda untuk pengalaman penuh adrenalin!</p>
+                            <a href="adventure/adventure.html" class="btn btn-dark mt-3">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <img src="class/class.jpeg" alt="Logo UKW" class="img-fluid mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">GO!!!BLOK CLASS</h5>
+                            <p class="card-text">Bergabunglah dengan GO!!!BLOK CLASS untuk petualangan belajar yang menyenangkan! Tingkatkan pengetahuan, kembangkan keterampilan, dan raih impian bersama komunitas pembelajar yang inspiratif. Mari bersama-sama menciptakan masa depan yang lebih cerah melalui pendidikan!</p>
+                            <a href="class/class.html" class="btn btn-dark mt-3">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--AKHIR LAYANAN SECTION-->
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">PESAN UNTUK KAMI</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form method="POST" name="contact-form" id="my-form">
+                        <div class="mb-3">
+                            <input type="text" name="name" class="form-control" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="pesan" class="form-control" rows="4" placeholder="Pesan Anda" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--AKHIR KONTAK SECTION-->
+
+    <!-- Footer Section -->
+       <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2024, BlOK 12 BROTHERHOOD.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://www.instagram.com/blok12_brotherhood/" class="text-light me-3" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@blok12_brother" class="text-light me-3" target="_blank" rel="noopener noreferrer"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@blok12_brotherhood?sub_confirmation=1" class="text-light" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--AKHIR FOOTER-->
+    
+
+
+    <script type="text/javascript">
+        // Inisialisasi Crisp Chat
+        window.$crisp = [];
+        window.CRISP_WEBSITE_ID = "8f8e8c53-bd00-4b46-8496-433fa3868f30";
+        
+        // Fungsi untuk memuat Crisp Chat
+        function loadCrispChat() {
+            var d = document;
+            var s = d.createElement("script");
+            s.src = "https://client.crisp.chat/l.js";
+            s.async = 1;
+            d.getElementsByTagName("head")[0].appendChild(s);
+        }
+
+        // Memuat Crisp Chat setelah halaman selesai dimuat
+        window.addEventListener('load', loadCrispChat);
+
+        // Tambahkan animasi ketika chat dibuka
+        $crisp.push(["on", "chat:opened", function() {
+            document.querySelector(".crisp-client").classList.add("animate__animated", "animate__bounceInRight");
+        }]);
+
+        // Pesan selamat datang kustom
+        $crisp.push(["set", "message:text", [
+            ["Halo! Selamat datang di Blok 12 Brotherhood. Ada yang bisa kami bantu?"],
+            ["Jangan ragu untuk bertanya tentang kegiatan atau informasi apa pun!"]
+        ]]);
+
+        // Animasi ikon chat
+        function animateIcon() {
+            var icon = document.querySelector(".crisp-client .cc-1m7s");
+            if (icon) {
+                icon.style.animation = "pulse 2s infinite";
+            }
+        }
+
+        // Panggil fungsi animasi setelah Crisp Chat dimuat
+        $crisp.push(["on", "session:loaded", animateIcon]);
+
+        // Tambahkan style untuk animasi
+        var style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.1); }
+                100% { transform: scale(1); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+
+
+
+    
+<!--BUTTON SCROLL-->
+<script>
+    // Fungsi untuk menampilkan atau menyembunyikan tombol scroll-up
+    function toggleScrollUpButton() {
+        var scrollUpBtn = document.getElementById("scrollUpBtn");
+        if (window.pageYOffset > window.innerHeight / 2) {
+            scrollUpBtn.classList.add("show");
+        } else {
+            scrollUpBtn.classList.remove("show");
+        }
+    }
+
+    // Fungsi untuk scroll ke atas halaman dengan animasi smooth
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    // Menambahkan event listener saat halaman di-scroll dengan throttling
+    let throttleTimer;
+    window.addEventListener("scroll", function() {
+        if (throttleTimer) return;
+        throttleTimer = setTimeout(function() {
+            toggleScrollUpButton();
+            throttleTimer = null;
+        }, 100);
+    });
+
+    // Menambahkan tombol scroll-up ke dalam DOM
+    document.body.insertAdjacentHTML('beforeend', '<button onclick="scrollToTop()" id="scrollUpBtn" title="Kembali ke atas" class="scroll-up-btn"><i class="bi bi-arrow-up"></i></button>');
+
+    // Menambahkan style untuk tombol scroll-up
+    var style = document.createElement('style');
+    style.innerHTML = `
+        .scroll-up-btn {
+            opacity: 0;
+            visibility: hidden;
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: black;
+            cursor: pointer;
+            padding: 18px;
+            border-radius: 50%;
+            font-size: 24px;
+            transition: all 0.3s ease;
+            transform: translateY(20px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+        }
+        .scroll-up-btn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .scroll-up-btn:hover {
+            background-color: transparent;
+        }
+        .scroll-up-btn::before {
+            content: "NAIK ATAS";
+            margin-right: 5px;
+            font-size: 16px;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+        }
+        @media (max-width: 768px) {
+            .scroll-up-btn {
+                bottom: 20px;
+                left: 20px;
+                padding: 15px;
+                font-size: 20px;
+            }
+            .scroll-up-btn::before {
+                font-size: 14px;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+    </script>
+
+    
+<!--AKHIR BUTTON SCROLL-->
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="beranda/js/script.js"></script>
+    <script src="beranda/js/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
