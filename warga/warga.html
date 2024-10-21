@@ -13,8 +13,7 @@
     <!-- Custom CSS -->
     <link href="beranda/css/style.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
@@ -171,21 +170,22 @@
                 { name: "RAMADHAN HAFIZH", image: "img/hafizh.jpeg", instagram: "https://www.instagram.com/rmdhnhfzh__", target: "_blank" },
                 { name: "NATHANIA SALAMONY", image: "https://pbs.twimg.com/media/EVUT-trU0AAC2VE.jpg:large", instagram: "https://www.instagram.com/m4dnn", target: "_blank" },
                 { name: "OKTAVIA SALVA NESYA", image: "img/okta.jpeg", instagram: "https://www.instagram.com/oktvaslvanysa", target: "_blank" },
-                { name: "DEBBY FATMAWATI", image: "https://pbs.twimg.com/media/EVUT-trU0AAC2VE.jpg:large", instagram: "https://www.instagram.com/m4dnn", target: "_blank" },
+                { name: "DEBBY FATMAWATI", image: "img/debby.jpeg", instagram: "https://www.instagram.com/debbyfatm", target: "_blank" },
+                { name: "DAVINA AURA", image: "img/davina.jpeg", instagram: "https://www.instagram.com/davinaauraa", target: "_blank" },
                 { name: "DESTA RAKASIWA", image: "img/desta.jpeg", instagram: "https://www.instagram.com/dstarkswa_", target: "_blank" },
                 { name: "ERIKA BANDARA SATI", image: "img/erika.jpeg", instagram: "https://www.instagram.com/erlierre", target: "_blank" },
                 { name: "DEA NAYLA PUTRI", image: "img/dea.jpeg", instagram: "https://www.instagram.com/deaanylaptr", target: "_blank" },
                 { name: "ADE NURUL IRLANI", image: "img/lani.jpeg", instagram: "https://www.instagram.com/lanikim__94", target: "_blank" },
                 { name: "BARI DARIS KURNIAWAN", image: "img/bari.jpeg", instagram: "https://www.instagram.com/barikurniawan_", target: "_blank" },
                 { name: "RAIHAN ALFARISI", image: "img/raihan.jpeg", instagram: "https://www.instagram.com/_muhammadraihannnn", target: "_blank" },
-                { name: "FAQIH RAYYA", image: "https://pbs.twimg.com/media/EVUT-trU0AAC2VE.jpg:large", instagram: "https://www.instagram.com/m4dnn", target: "_blank" },
-                { name: "ANDIKA RIZKY", image: "https://pbs.twimg.com/media/EVUT-trU0AAC2VE.jpg:large", instagram: "https://www.instagram.com/m4dnn", target: "_blank" },
+                { name: "FAQIH RAYYA", image: "img/faqih.jpeg", instagram: "https://www.instagram.com/__faqihrayya", target: "_blank" },
+                { name: "ANDIKA RIZKY", image: "img/andika.jpeg", instagram: "https://www.instagram.com/andikarzkyp", target: "_blank" },
                 { name: "KEVIN ADITYA", image: "https://pbs.twimg.com/media/EVUT-trU0AAC2VE.jpg:large", instagram: "https://www.instagram.com/m4dnn", target: "_blank" },
                 { name: "DJENAR DWIAYU", image: "img/djenar.jpeg", instagram: "https://www.instagram.com/ranejd_", target: "_blank" },
                 { name: "FAQIH ADI GUNAWAN", image: "img/plecet.jpeg", instagram: "https://www.instagram.com/faqihadigunawan78", target: "_blank" },
                 { name: "AGUNG KURNIA RAMADHAN", image: "img/agung.jpeg", instagram: "https://www.instagram.com/kurnniiaa", target: "_blank" },
                 { name: "FADLAN ALI RAMDANI", image: "https://pbs.twimg.com/media/EVUT-trU0AAC2VE.jpg:large", instagram: "https://www.instagram.com/m4dnn", target: "_blank" },
-                { name: "RAKA ANDIKA", image: "https://pbs.twimg.com/media/EVUT-trU0AAC2VE.jpg:large", instagram: "https://www.instagram.com/m4dnn", target: "_blank" },
+                { name: "RAKA ANDIKA", image: "img/raka.jpeg", instagram: "https://www.instagram.com/_rakaand", target: "_blank" },
                 { name: "ARDITYA HERLAMBANG", image: "https://pbs.twimg.com/media/EVUT-trU0AAC2VE.jpg:large", instagram: "https://www.instagram.com/m4dnn", target: "_blank" },
                 { name: "MUHAMMAD ADENAN", image: "img/acung.jpeg", instagram: "https://www.instagram.com/m4dnn", target: "_blank" },
                 { name: "DITYA ZAKY", image: "img/zaky.jpeg", instagram: "https://www.instagram.com/dtyzky", target: "_blank" },
@@ -262,94 +262,150 @@
             </div>
         </footer>
         <!--AKHIR FOOTER-->
+
+<!-- CRISP LIVECHAT
+    <script type="text/javascript">
+        // Inisialisasi Crisp Chat
+        window.$crisp = [];
+        window.CRISP_WEBSITE_ID = "8f8e8c53-bd00-4b46-8496-433fa3868f30";
         
-    <!--BUTTON SCROLL-->
-    <script>
-        // Fungsi untuk menampilkan atau menyembunyikan tombol scroll-up
-        function toggleScrollUpButton() {
-            var scrollUpBtn = document.getElementById("scrollUpBtn");
-            if (window.pageYOffset > window.innerHeight / 2) {
-                scrollUpBtn.classList.add("show");
-            } else {
-                scrollUpBtn.classList.remove("show");
+        // Fungsi untuk memuat Crisp Chat
+        function loadCrispChat() {
+            var d = document;
+            var s = d.createElement("script");
+            s.src = "https://client.crisp.chat/l.js";
+            s.async = 1;
+            d.getElementsByTagName("head")[0].appendChild(s);
+        }
+
+        // Memuat Crisp Chat setelah halaman selesai dimuat
+        window.addEventListener('load', loadCrispChat);
+
+        // Tambahkan animasi ketika chat dibuka
+        $crisp.push(["on", "chat:opened", function() {
+            document.querySelector(".crisp-client").classList.add("animate__animated", "animate__bounceInRight");
+        }]);
+
+        // Pesan selamat datang kustom
+        $crisp.push(["set", "message:text", [
+            ["Halo! Selamat datang di Blok 12 Brotherhood. Ada yang bisa kami bantu?"],
+            ["Jangan ragu untuk bertanya tentang kegiatan atau informasi apa pun!"]
+        ]]);
+
+        // Animasi ikon chat
+        function animateIcon() {
+            var icon = document.querySelector(".crisp-client .cc-1m7s");
+            if (icon) {
+                icon.style.animation = "pulse 2s infinite";
             }
         }
 
-        // Fungsi untuk scroll ke atas halaman dengan animasi smooth
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        }
+        // Panggil fungsi animasi setelah Crisp Chat dimuat
+        $crisp.push(["on", "session:loaded", animateIcon]);
 
-        // Menambahkan event listener saat halaman di-scroll dengan throttling
-        let throttleTimer;
-        window.addEventListener("scroll", function() {
-            if (throttleTimer) return;
-            throttleTimer = setTimeout(function() {
-                toggleScrollUpButton();
-                throttleTimer = null;
-            }, 100);
-        });
-
-        // Menambahkan tombol scroll-up ke dalam DOM
-        document.body.insertAdjacentHTML('beforeend', '<button onclick="scrollToTop()" id="scrollUpBtn" title="Kembali ke atas" class="scroll-up-btn"><i class="bi bi-arrow-up"></i></button>');
-
-        // Menambahkan style untuk tombol scroll-up
+        // Tambahkan style untuk animasi
         var style = document.createElement('style');
         style.innerHTML = `
-            .scroll-up-btn {
-                opacity: 0;
-                visibility: hidden;
-                position: fixed;
-                bottom: 30px;
-                right: 30px;
-                z-index: 99;
-                border: none;
-                outline: none;
-                background-color: transparent;
-                color: black;
-                cursor: pointer;
-                padding: 18px;
-                border-radius: 50%;
-                font-size: 24px;
-                transition: all 0.3s ease;
-                transform: translateY(20px);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
-            }
-            .scroll-up-btn.show {
-                opacity: 1;
-                visibility: visible;
-                transform: translateY(0);
-            }
-            .scroll-up-btn:hover {
-                background-color: transparent;
-            }
-            .scroll-up-btn::after {
-                content: "NAIK ATAS";
-                margin-left: 5px;
-                font-size: 16px;
-                text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
-            }
-            @media (max-width: 768px) {
-                .scroll-up-btn {
-                    bottom: 20px;
-                    right: 20px;
-                    padding: 15px;
-                    font-size: 20px;
-                }
-                .scroll-up-btn::after {
-                    font-size: 14px;
-                }
+            @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.1); }
+                100% { transform: scale(1); }
             }
         `;
         document.head.appendChild(style);
     </script>
-    <!--AKHIR BUTTON SCROLL-->
+-->
+
+<!--CHATWAY LIVECHAT-->
+<script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=fZFLFuw2QFGM"></script>
+
+<!--BUTTON SCROLL-->
+<script>
+    // Fungsi untuk menampilkan atau menyembunyikan tombol scroll-up
+    function toggleScrollUpButton() {
+        var scrollUpBtn = document.getElementById("scrollUpBtn");
+        if (window.pageYOffset > window.innerHeight / 2) {
+            scrollUpBtn.classList.add("show");
+        } else {
+            scrollUpBtn.classList.remove("show");
+        }
+    }
+
+    // Fungsi untuk scroll ke atas halaman dengan animasi smooth
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    // Menambahkan event listener saat halaman di-scroll dengan throttling
+    let throttleTimer;
+    window.addEventListener("scroll", function() {
+        if (throttleTimer) return;
+        throttleTimer = setTimeout(function() {
+            toggleScrollUpButton();
+            throttleTimer = null;
+        }, 100);
+    });
+
+    // Menambahkan tombol scroll-up ke dalam DOM
+    document.body.insertAdjacentHTML('beforeend', '<button onclick="scrollToTop()" id="scrollUpBtn" title="Kembali ke atas" class="scroll-up-btn"><i class="bi bi-arrow-up"></i></button>');
+
+    // Menambahkan style untuk tombol scroll-up
+    var style = document.createElement('style');
+    style.innerHTML = `
+        .scroll-up-btn {
+            opacity: 0;
+            visibility: hidden;
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: black;
+            cursor: pointer;
+            padding: 18px;
+            border-radius: 50%;
+            font-size: 24px;
+            transition: all 0.3s ease;
+            transform: translateY(20px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+        }
+        .scroll-up-btn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .scroll-up-btn:hover {
+            background-color: transparent;
+        }
+        .scroll-up-btn::before {
+            content: "NAIK ATAS";
+            margin-right: 5px;
+            font-size: 16px;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+        }
+        @media (max-width: 768px) {
+            .scroll-up-btn {
+                bottom: 20px;
+                left: 20px;
+                padding: 15px;
+                font-size: 20px;
+            }
+            .scroll-up-btn::before {
+                font-size: 14px;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+</script>
+<!--AKHIR BUTTON SCROLL-->
     
         <!-- AOS JS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
