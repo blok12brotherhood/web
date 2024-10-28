@@ -109,7 +109,7 @@
         <div id="options" class="options"></div>
         <div id="hint" class="hint"></div>
         <button id="start" style="margin: 20px auto; width: 80%; max-width: 300px; display: block;">Mulai Quiz ▶️</button>
-        <button onclick="window.location.href='/quiz/quiz.html'" style="margin: 20px auto; width: 80%; max-width: 300px; display: block;">Kembali ke Beranda 🏠</button>
+        <button onclick="window.location.href='../quiz.html'" style="margin: 20px auto; width: 80%; max-width: 300px; display: block;">Kembali ke Beranda 🏠</button>
         <button id="next" style="display: none; margin: 20px auto; width: 80%; max-width: 300px;">Pertanyaan Selanjutnya ➡️</button>
     </div>
 
@@ -126,7 +126,7 @@
 
         async function loadQuestions() {
             try {
-                const response = await fetch('../questionsmtk.json');
+                const response = await fetch('../mtk/questionsmtk.json');
                 questions = await response.json();
                 questions = shuffleArray(questions);
             } catch (error) {
