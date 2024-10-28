@@ -126,7 +126,7 @@
 
         async function loadQuestions() {
             try {
-                const response = await fetch('/class/game/quiz/mtk/questionsmtk.json');
+                const response = await fetch('../questionsmtk.json');
                 questions = await response.json();
                 questions = shuffleArray(questions);
             } catch (error) {
