@@ -3,60 +3,60 @@
         "question": "Jika 3x + 5 = 20, berapakah nilai x?",
         "options": ["5", "7", "3", "4"],
         "correct_answer": "5",
-        "hint": "3x + 5 = 20\n3x = 20 - 5\n3x = 15\nx = 15 ÷ 3\nx = 5"
+        "hint": "Langkah penyelesaian:\n1. Kurangkan kedua ruas dengan 5 untuk mengisolasi variabel x\n   3x + 5 - 5 = 20 - 5\n   3x = 15\n2. Bagi kedua ruas dengan 3\n   3x ÷ 3 = 15 ÷ 3\n   x = 5\n3. Verifikasi:\n   3(5) + 5 = 15 + 5 = 20 ✓"
     },
     {
         "question": "Faktorkan x² + 5x + 6",
         "options": ["(x+2)(x+3)", "(x+1)(x+6)", "(x+3)(x+2)", "(x-2)(x-3)"],
         "correct_answer": "(x+2)(x+3)",
-        "hint": "Cari dua bilangan yang:\n- Jumlahnya = 5\n- Hasil kalinya = 6\nBilangan tersebut adalah 2 dan 3\nSehingga faktornya (x+2)(x+3)"
+        "hint": "Langkah pemfaktoran:\n1. Identifikasi:\n   - Koefisien x² = 1\n   - Koefisien x = 5\n   - Konstanta = 6\n2. Cari dua bilangan (p dan q) dimana:\n   p + q = 5 (koefisien x)\n   p × q = 6 (konstanta)\n3. Periksa kemungkinan faktor dari 6:\n   1 × 6 = 6 (1+6 = 7)\n   2 × 3 = 6 (2+3 = 5) ✓\n4. Maka p = 2 dan q = 3\n5. Tulis dalam bentuk faktor: (x+2)(x+3)"
     },
     {
         "question": "Luas sebuah persegi panjang adalah 48 cm². Jika panjangnya 8 cm, berapakah lebarnya?",
         "options": ["6 cm", "4 cm", "8 cm", "12 cm"],
         "correct_answer": "6 cm",
-        "hint": "Luas = panjang × lebar\n48 = 8 × lebar\nlebar = 48 ÷ 8\nlebar = 6 cm"
+        "hint": "Penyelesaian:\n1. Rumus luas persegi panjang:\n   L = p × l\n2. Substitusi nilai yang diketahui:\n   48 = 8 × l\n3. Selesaikan persamaan:\n   l = 48 ÷ 8\n   l = 6\n4. Verifikasi:\n   - Luas = 8 × 6 = 48 cm² ✓\n   - Masuk akal karena lebar < panjang"
     },
     {
         "question": "Berapakah hasil dari (-3)² × 4?",
         "options": ["36", "-36", "9", "-9"],
         "correct_answer": "36",
-        "hint": "(-3)² = 9\n9 × 4 = 36"
+        "hint": "Langkah pengerjaan:\n1. Selesaikan pangkat terlebih dahulu\n   (-3)² = (-3) × (-3)\n   Ingat: negatif × negatif = positif\n   (-3)² = 9\n2. Kalikan dengan 4:\n   9 × 4 = 36\n3. Perhatikan:\n   - Tanda negatif dalam kurung dipangkatkan dulu\n   - Berbeda dengan -3² yang berarti -(3²) = -9"
     },
     {
         "question": "Selesaikan: 2y - 7 = 11",
         "options": ["9", "7", "8", "10"],
         "correct_answer": "9",
-        "hint": "2y - 7 = 11\n2y = 11 + 7\n2y = 18\ny = 18 ÷ 2\ny = 9"
+        "hint": "Langkah penyelesaian:\n1. Tambahkan kedua ruas dengan 7 untuk mengisolasi variabel\n   2y - 7 + 7 = 11 + 7\n   2y = 18\n2. Bagi kedua ruas dengan 2\n   2y ÷ 2 = 18 ÷ 2\n   y = 9\n3. Verifikasi:\n   2(9) - 7 = 18 - 7 = 11 ✓\n4. Periksa: nilai y masuk akal"
     },
     {
         "question": "Tentukan gradien garis yang melalui titik (2,3) dan (4,7)",
         "options": ["2", "3", "4", "1"],
         "correct_answer": "2",
-        "hint": "Gradien = (y₂-y₁)/(x₂-x₁)\n= (7-3)/(4-2)\n= 4/2\n= 2"
+        "hint": "Langkah mencari gradien:\n1. Identifikasi koordinat:\n   (x₁,y₁) = (2,3)\n   (x₂,y₂) = (4,7)\n2. Gunakan rumus gradien:\n   m = (y₂-y₁)/(x₂-x₁)\n3. Substitusi:\n   m = (7-3)/(4-2)\n   m = 4/2\n   m = 2\n4. Interpretasi: setiap x bertambah 1,\n   y bertambah 2"
     },
     {
         "question": "Berapakah akar kuadrat dari 144?",
         "options": ["12", "14", "10", "16"],
         "correct_answer": "12",
-        "hint": "√144 = 12 karena 12 × 12 = 144"
+        "hint": "Cara mencari √144:\n1. Faktorkan 144 menjadi faktor prima:\n   144 = 2 × 2 × 2 × 2 × 3 × 3\n   144 = (2⁴) × (3²)\n2. Sederhanakan akar:\n   √144 = √(2⁴ × 3²)\n   = √(2⁴) × √(3²)\n   = 2² × 3\n   = 4 × 3\n   = 12\n3. Verifikasi: 12² = 144 ✓"
     },
     {
         "question": "Jika 4p = 24, berapakah nilai 2p?",
         "options": ["12", "6", "8", "10"],
         "correct_answer": "12",
-        "hint": "4p = 24\np = 24 ÷ 4 = 6\nmaka 2p = 2 × 6 = 12"
+        "hint": "Langkah penyelesaian:\n1. Cari nilai p:\n   4p = 24\n   p = 24 ÷ 4\n   p = 6\n2. Substitusi p ke 2p:\n   2p = 2 × 6\n   2p = 12\n3. Verifikasi:\n   - 4p = 4 × 6 = 24 ✓\n   - 2p = 2 × 6 = 12 ✓"
     },
     {
         "question": "Selesaikan: -2(x + 3) = 14",
         "options": ["-4", "-8", "-10", "-7"],
         "correct_answer": "-7",
-        "hint": "-2(x + 3) = 14\nx + 3 = -7\nx = -10"
+        "hint": "Langkah penyelesaian:\n1. Distribusikan -2:\n   -2x - 6 = 14\n2. Tambah kedua ruas dengan 6:\n   -2x - 6 + 6 = 14 + 6\n   -2x = 20\n3. Bagi kedua ruas dengan -2:\n   -2x ÷ (-2) = 20 ÷ (-2)\n   x = -10\n4. Verifikasi:\n   -2(-10 + 3) = -2(-7) = 14 ✓"
     },
     {
         "question": "Berapakah keliling lingkaran dengan jari-jari 7 cm? (π = 3.14)",
         "options": ["43.96 cm", "38.48 cm", "153.86 cm", "21.98 cm"],
         "correct_answer": "43.96 cm",
-        "hint": "Keliling = 2πr\n= 2 × 3.14 × 7\n= 43.96 cm"
+        "hint": "Langkah penyelesaian:\n1. Rumus keliling lingkaran = 2πr\n2. Substitusi nilai:\n   - r = 7 cm\n   - π = 3.14\n3. Hitung:\n   K = 2 × 3.14 × 7\n   = 6.28 × 7\n   = 43.96\n4. Periksa satuan: cm\n5. Bandingkan dengan diameter:\n   - d = 14 cm\n   - K ≈ 3.14 × d ✓"
     }
 ]

@@ -3,60 +3,60 @@
         "question": "Tentukan nilai sin 60°",
         "options": ["√3/2", "1/2", "1", "√2/2"],
         "correct_answer": "√3/2",
-        "hint": "Nilai sin 60° adalah √3/2, ini adalah salah satu nilai trigonometri sudut istimewa yang perlu dihapal"
+        "hint": "Untuk mencari sin 60°:\n1. Gunakan segitiga sama sisi dengan sisi 2 unit\n2. Bagi menjadi 2 segitiga siku-siku sama kaki\n3. Tinggi segitiga = 2 × sin 60° = √3\n4. Maka sin 60° = √3/2\nIni adalah salah satu nilai trigonometri sudut istimewa yang penting"
     },
     {
-        "question": "Selesaikan persamaan: log₂(x) = 3",
+        "question": "Selesaikan persamaan: log₂(x) = 3", 
         "options": ["8", "6", "4", "2"],
-        "correct_answer": "8", 
-        "hint": "log₂(x) = 3 berarti 2³ = x\n2³ = 2 × 2 × 2 = 8"
+        "correct_answer": "8",
+        "hint": "Untuk menyelesaikan log₂(x) = 3:\n1. Definisi logaritma: jika log₂(x) = 3, maka 2³ = x\n2. Hitung 2³:\n   2³ = 2 × 2 × 2\n   2³ = 8\n3. Verifikasi: log₂(8) = 3 ✓"
     },
     {
         "question": "Tentukan turunan dari f(x) = x² + 3x + 1",
         "options": ["2x + 3", "x² + 3", "2x", "3x + 1"],
         "correct_answer": "2x + 3",
-        "hint": "Turunan x² = 2x\nTurunan 3x = 3\nTurunan 1 = 0\nJadi f'(x) = 2x + 3"
+        "hint": "Gunakan aturan turunan:\n1. Turunan x² (aturan pangkat):\n   d/dx(x²) = 2x¹ = 2x\n2. Turunan 3x (aturan konstanta):\n   d/dx(3x) = 3\n3. Turunan 1 (konstanta):\n   d/dx(1) = 0\n4. Gabungkan: f'(x) = 2x + 3 + 0 = 2x + 3"
     },
     {
         "question": "Berapakah ∫(2x + 1)dx?",
         "options": ["x² + x + C", "2x² + x", "x² + x", "2x² + x + C"],
         "correct_answer": "x² + x + C",
-        "hint": "∫2x dx = x²\n∫1 dx = x\nJangan lupa + C\nJadi ∫(2x + 1)dx = x² + x + C"
+        "hint": "Gunakan aturan integral:\n1. ∫2x dx:\n   - Naikkan pangkat x sebesar 1\n   - Bagi dengan pangkat baru\n   - 2∫x dx = 2(x²/2) = x²\n2. ∫1 dx = x\n3. Tambahkan konstanta C\n4. Gabungkan: ∫(2x + 1)dx = x² + x + C\n5. Verifikasi: turunan dari x² + x + C adalah 2x + 1 ✓"
     },
     {
         "question": "Tentukan persamaan garis yang melalui titik (1,2) dan (3,6)",
         "options": ["y = 2x", "y = 2x + 1", "y = 3x", "y = x + 1"],
         "correct_answer": "y = 2x",
-        "hint": "Gradien = (y₂-y₁)/(x₂-x₁) = (6-2)/(3-1) = 2\nMasukkan titik (1,2):\n2 = 2(1)\nJadi y = 2x"
+        "hint": "Langkah-langkah:\n1. Hitung gradien (m):\n   m = (y₂-y₁)/(x₂-x₁)\n   m = (6-2)/(3-1)\n   m = 4/2 = 2\n2. Gunakan rumus y - y₁ = m(x - x₁)\n   y - 2 = 2(x - 1)\n3. Sederhanakan:\n   y - 2 = 2x - 2\n   y = 2x\n4. Verifikasi: titik (1,2) dan (3,6) memenuhi y = 2x"
     },
     {
         "question": "Tentukan nilai cos 45°",
         "options": ["√2/2", "1/2", "√3/2", "1"],
         "correct_answer": "√2/2",
-        "hint": "cos 45° = sin 45° = √2/2\nIni adalah nilai trigonometri sudut istimewa 45°"
+        "hint": "Untuk mencari cos 45°:\n1. Gunakan segitiga siku-siku sama kaki\n2. Jika sisi miring = 1:\n   - Kedua sisi lainnya sama = 1/√2\n3. cos 45° = sisi samping/sisi miring\n   = (1/√2)/1 = 1/√2 = √2/2\n4. Perhatikan bahwa sin 45° = cos 45° karena segitiga sama kaki"
     },
     {
         "question": "Selesaikan: 2ˣ = 32",
         "options": ["5", "4", "6", "8"],
         "correct_answer": "5",
-        "hint": "2ˣ = 32\n2ˣ = 2⁵\nx = 5"
+        "hint": "Untuk menyelesaikan 2ˣ = 32:\n1. Ubah 32 ke bentuk pangkat 2:\n   32 = 2⁵\n2. Maka persamaan menjadi:\n   2ˣ = 2⁵\n3. Karena basis sama (2), maka:\n   x = 5\n4. Verifikasi: 2⁵ = 2×2×2×2×2 = 32 ✓"
     },
     {
         "question": "Tentukan nilai maksimum dari f(x) = -x² + 4x + 5",
         "options": ["9", "8", "7", "6"],
         "correct_answer": "9",
-        "hint": "f'(x) = -2x + 4\nTitik stasioner: -2x + 4 = 0\nx = 2\nNilai maksimum = f(2) = -(2)² + 4(2) + 5 = 9"
+        "hint": "Langkah-langkah:\n1. Cari turunan pertama:\n   f'(x) = -2x + 4\n2. Cari titik stasioner (f'(x) = 0):\n   -2x + 4 = 0\n   -2x = -4\n   x = 2\n3. Cari turunan kedua:\n   f''(x) = -2 (negatif)\n4. Karena f''(x) < 0, x = 2 adalah maksimum\n5. Hitung f(2):\n   = -(2)² + 4(2) + 5\n   = -4 + 8 + 5\n   = 9"
     },
     {
         "question": "Berapakah determinan matriks [[2,1],[3,4]]?",
         "options": ["5", "7", "3", "4"],
         "correct_answer": "5",
-        "hint": "det = ad - bc\n= (2×4) - (1×3)\n= 8 - 3\n= 5"
+        "hint": "Untuk matriks 2×2:\n1. Rumus determinan = ad - bc\n   [[a,b],\n    [c,d]]\n2. Masukkan nilai:\n   a = 2, b = 1\n   c = 3, d = 4\n3. Hitung:\n   det = (2×4) - (1×3)\n   = 8 - 3\n   = 5\n4. Verifikasi: det ≠ 0, matriks memiliki invers"
     },
     {
         "question": "Tentukan invers dari matriks [[1,2],[3,4]]",
         "options": [["-2,1","1.5,-0.5"], ["2,-1","-1.5,0.5"], ["1,2","3,4"], ["4,3","2,1"]],
         "correct_answer": ["-2,1","1.5,-0.5"],
-        "hint": "det = (1×4) - (2×3) = -2\nInvers = 1/det × [[4,-2],[-3,1]]"
+        "hint": "Langkah mencari invers matriks 2×2:\n1. Hitung determinan:\n   det = (1×4) - (2×3) = 4 - 6 = -2\n2. Buat matriks adjoin:\n   - Tukar a dan d\n   - Negatifkan b dan c\n   [[4,-2],[-3,1]]\n3. Kalikan dengan 1/det:\n   1/-2 × [[4,-2],[-3,1]]\n   = [[-2,1],[1.5,-0.5]]\n4. Verifikasi: A×A⁻¹ = I"
     }
 ]
