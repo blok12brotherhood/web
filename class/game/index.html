@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Edukasi GO!!!BLOK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #a8e6cf, #dcedc1, #ffd3b6, #ffaaa5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .game-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .game-title {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .game-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .game-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .game-icon {
+            font-size: 3em;
+            margin-bottom: 1rem;
+        }
+
+        .game-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .game-desc {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #ffaaa5;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 2rem;
+            transition: background 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #ff8b8b;
+        }
+
+        @media (max-width: 600px) {
+            .game-container {
+                padding: 1rem;
+            }
+
+            .game-title {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container animate__animated animate__fadeIn">
+        <h1 class="game-title">🎮 GO!!!BLOK12 CLASS 🎮</h1>
+        <a href="../class.html" class="back-button">
+            <i class="fas fa-arrow-left me-2"></i>
+            Kembali
+        </a>
+        
+        <div class="game-options">
+            <a href="/blok12/web/class/game/quiz/quiz.html" class="game-card animate__animated animate__fadeInUp">
+                <div class="game-icon">📝</div>
+                <div class="game-name">Kuis Seru</div>
+                <div class="game-desc">Uji pengetahuanmu dengan berbagai pertanyaan menarik!</div>
+            </a>
+            <div class="game-card animate__animated animate__fadeInUp" style="animation-delay: 0.4s; opacity: 0.7; cursor: not-allowed;">
+                <div class="achievement-badge">
+                    <i class="fas fa-wrench"></i> Coming Soon!
+                </div>
+                <div class="game-icon">🚧</div>
+                <div class="game-name">Puzzle Edukatif</div>
+                <div class="game-desc">Maaf, permainan puzzle sedang dalam perbaikan dan pembaruan. Silakan coba permainan lainnya terlebih dahulu! 🚧</div>
+            </div>
+            <!--
+            <a href="/puzzle/puzzlegame.html" class="game-card animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                <div class="game-icon">🧩</div>
+                <div class="game-name">Puzzle Edukatif</div>
+                <div class="game-desc">Selesaikan teka-teki gambar sambil belajar!</div>
+            </a>
+            -->
+            <div class="game-card animate__animated animate__fadeInUp" style="animation-delay: 0.4s; opacity: 0.7; cursor: not-allowed;">
+                <div class="achievement-badge">
+                    <i class="fas fa-wrench"></i> Coming Soon!
+                </div>
+                <div class="game-icon">🚧</div>
+                <div class="game-name">Permainan Memori</div>
+                <div class="game-desc">Maaf, permainan memori sedang dalam perbaikan dan pembaruan. Silakan coba permainan lainnya terlebih dahulu! 🚧</div>
+            </div>
+            <!--
+            <a href="memory.html" class="game-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                <div class="game-icon">🎯</div>
+                <div class="game-name">Permainan Memori</div>
+                <div class="game-desc">Latih ingatanmu dengan kartu-kartu yang menarik!</div>
+            </a>
+            -->
+
+        </div>
+    
+    </div>
+
+</body>
+</html>

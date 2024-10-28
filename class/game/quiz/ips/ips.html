@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tebak-tebakan Matematika</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .question {
+            font-size: 1.4em;
+            margin-bottom: 25px;
+            color: #2c3e50;
+            text-align: center;
+            font-weight: bold;
+        }
+        .options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        button {
+            padding: 15px;
+            font-size: 1.1em;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(145deg, #4CAF50, #45a049);
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.2);
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);
+            background: linear-gradient(145deg, #45a049, #4CAF50);
+        }
+        #score {
+            font-size: 1.3em;
+            margin: 20px 0;
+            text-align: center;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        #timer {
+            font-size: 1.3em;
+            color: #e74c3c;
+            margin: 15px 0;
+            text-align: center;
+            font-weight: bold;
+            animation: pulse 1s infinite;
+            display: none;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .hint {
+            color: #7f8c8d;
+            font-style: italic;
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #f7f9fc;
+            border-radius: 8px;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .question-number {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔢 <br> Quiz Ilmu Pengetahuan Sosial</h1>
+        <div id="timer">⏳ Waktu: <span id="time">30</span> detik</div>
+        <div id="score">🏆 Skor: <span id="current-score">0</span></div>
+        <div class="question-number">Soal ke-<span id="question-number">1</span> dari 25</div>
+        <div id="question" class="question"></div>
+        <div id="options" class="options"></div>
+        <div id="hint" class="hint"></div>
+        <button id="start" style="margin: 20px auto; width: 80%; max-width: 300px; display: block;">Mulai Quiz ▶️</button>
+        <button onclick="window.location.href='/quiz/quiz.html'" style="margin: 20px auto; width: 80%; max-width: 300px; display: block;">Kembali ke Beranda 🏠</button>
+        <button id="next" style="display: none; margin: 20px auto; width: 80%; max-width: 300px;">Pertanyaan Selanjutnya ➡️</button>
+    </div>
+
+    <script>
+        let questions = [];
+        let currentQuestion = 0;
+        let score = 0;
+        let timer;
+        let timeLeft = 30;
+
+        // Sound effects
+        const correctSound = new Audio('https://www.soundjay.com/buttons/sounds/button-09.mp3');
+        const wrongSound = new Audio('https://www.soundjay.com/buttons/sounds/button-10.mp3');
+
+        async function loadQuestions() {
+            try {
+                const response = await fetch('/quiz/ips/questionsips.json');
+                questions = await response.json();
+                questions = shuffleArray(questions);
+            } catch (error) {
+                console.error('Error loading questions:', error);
+            }
+        }
+
+        document.getElementById('start').onclick = startGame;
+
+        async function startGame() {
+            document.getElementById('start').style.display = 'none';
+            document.getElementById('timer').style.display = 'block';
+            await loadQuestions();
+            showQuestion();
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        function showQuestion() {
+            if (currentQuestion >= questions.length) {
+                endGame();
+                return;
+            }
+
+            document.getElementById('question-number').textContent = currentQuestion + 1;
+            const question = questions[currentQuestion];
+            document.getElementById('question').textContent = question.question;
+            
+            const optionsContainer = document.getElementById('options');
+            optionsContainer.innerHTML = '';
+            
+            question.options.forEach(option => {
+                const button = document.createElement('button');
+                button.textContent = option;
+                button.onclick = () => checkAnswer(option);
+                button.classList.add('option-button');
+                optionsContainer.appendChild(button);
+            });
+
+            document.getElementById('hint').textContent = '';
+            document.getElementById('next').style.display = 'none';
+            
+            timeLeft = 30;
+            if (timer) clearInterval(timer);
+            startTimer();
+        }
+
+        function startTimer() {
+            timer = setInterval(() => {
+                timeLeft--;
+                document.getElementById('time').textContent = timeLeft;
+                
+                if (timeLeft <= 10) {
+                    document.getElementById('timer').style.color = '#ff0000';
+                }
+                
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    wrongSound.play();
+                    showHint();
+                    disableOptions();
+                    document.getElementById('next').style.display = 'block';
+                    document.getElementById('next').onclick = () => {
+                        currentQuestion++;
+                        showQuestion();
+                    };
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Waktu Habis!',
+                        text: 'Silakan coba lagi untuk pertanyaan berikutnya',
+                        confirmButtonText: 'Lanjut'
+                    });
+                }
+            }, 1000);
+        }
+
+        function checkAnswer(selected) {
+            clearInterval(timer);
+            const correct = questions[currentQuestion].correct_answer;
+            
+            if (selected === correct) {
+                correctSound.play();
+                score += timeLeft;
+                document.getElementById('current-score').textContent = score;
+                Swal.fire({
+                    icon: 'success',
+                    title: '🎉 Benar!',
+                    text: `Kamu mendapatkan ${timeLeft} poin!`,
+                    confirmButtonText: 'Lanjut'
+                });
+            } else {
+                wrongSound.play();
+                showHint();
+                Swal.fire({
+                    icon: 'error',
+                    title: '❌ Salah!',
+                    text: `Jawaban yang benar adalah: ${correct}`,
+                    confirmButtonText: 'Lanjut'
+                });
+            }
+            
+            disableOptions();
+            document.getElementById('next').style.display = 'block';
+            document.getElementById('next').onclick = () => {
+                currentQuestion++;
+                showQuestion();
+            };
+        }
+
+        function showHint() {
+            const hint = questions[currentQuestion].hint;
+            document.getElementById('hint').textContent = '💡 Petunjuk: ' + hint;
+        }
+
+        function disableOptions() {
+            const buttons = document.querySelectorAll('#options button');
+            buttons.forEach(button => {
+                button.disabled = true;
+                if (button.textContent === questions[currentQuestion].correct_answer) {
+                    button.style.background = 'linear-gradient(145deg, #27ae60, #2ecc71)';
+                } else {
+                    button.style.background = 'linear-gradient(145deg, #e74c3c, #c0392b)';
+                }
+            });
+        }
+
+        function endGame() {
+            Swal.fire({
+                icon: 'success',
+                title: '🎮 Permainan Selesai!',
+                html: `<p style="font-size: 1.5em; color: #2c3e50;">Skor Akhir: ${score} 🏆</p>`,
+                confirmButtonText: '🔄 Main Lagi',
+                allowOutsideClick: false
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    currentQuestion = 0;
+                    score = 0;
+                    document.getElementById('current-score').textContent = '0';
+                    document.getElementById('timer').style.display = 'block';
+                    document.getElementById('hint').style.display = 'block';
+                    questions = shuffleArray(questions);
+                    showQuestion();
+                }
+            });
+            
+            document.getElementById('options').innerHTML = '';
+            document.getElementById('timer').style.display = 'none';
+            document.getElementById('hint').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
