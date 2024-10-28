@@ -1,0 +1,62 @@
+[
+    {
+        "question": "Tentukan nilai sin 60°",
+        "options": ["√3/2", "1/2", "1", "√2/2"],
+        "correct_answer": "√3/2",
+        "hint": "Nilai sin 60° adalah √3/2, ini adalah salah satu nilai trigonometri sudut istimewa yang perlu dihapal"
+    },
+    {
+        "question": "Selesaikan persamaan: log₂(x) = 3",
+        "options": ["8", "6", "4", "2"],
+        "correct_answer": "8", 
+        "hint": "log₂(x) = 3 berarti 2³ = x\n2³ = 2 × 2 × 2 = 8"
+    },
+    {
+        "question": "Tentukan turunan dari f(x) = x² + 3x + 1",
+        "options": ["2x + 3", "x² + 3", "2x", "3x + 1"],
+        "correct_answer": "2x + 3",
+        "hint": "Turunan x² = 2x\nTurunan 3x = 3\nTurunan 1 = 0\nJadi f'(x) = 2x + 3"
+    },
+    {
+        "question": "Berapakah ∫(2x + 1)dx?",
+        "options": ["x² + x + C", "2x² + x", "x² + x", "2x² + x + C"],
+        "correct_answer": "x² + x + C",
+        "hint": "∫2x dx = x²\n∫1 dx = x\nJangan lupa + C\nJadi ∫(2x + 1)dx = x² + x + C"
+    },
+    {
+        "question": "Tentukan persamaan garis yang melalui titik (1,2) dan (3,6)",
+        "options": ["y = 2x", "y = 2x + 1", "y = 3x", "y = x + 1"],
+        "correct_answer": "y = 2x",
+        "hint": "Gradien = (y₂-y₁)/(x₂-x₁) = (6-2)/(3-1) = 2\nMasukkan titik (1,2):\n2 = 2(1)\nJadi y = 2x"
+    },
+    {
+        "question": "Tentukan nilai cos 45°",
+        "options": ["√2/2", "1/2", "√3/2", "1"],
+        "correct_answer": "√2/2",
+        "hint": "cos 45° = sin 45° = √2/2\nIni adalah nilai trigonometri sudut istimewa 45°"
+    },
+    {
+        "question": "Selesaikan: 2ˣ = 32",
+        "options": ["5", "4", "6", "8"],
+        "correct_answer": "5",
+        "hint": "2ˣ = 32\n2ˣ = 2⁵\nx = 5"
+    },
+    {
+        "question": "Tentukan nilai maksimum dari f(x) = -x² + 4x + 5",
+        "options": ["9", "8", "7", "6"],
+        "correct_answer": "9",
+        "hint": "f'(x) = -2x + 4\nTitik stasioner: -2x + 4 = 0\nx = 2\nNilai maksimum = f(2) = -(2)² + 4(2) + 5 = 9"
+    },
+    {
+        "question": "Berapakah determinan matriks [[2,1],[3,4]]?",
+        "options": ["5", "7", "3", "4"],
+        "correct_answer": "5",
+        "hint": "det = ad - bc\n= (2×4) - (1×3)\n= 8 - 3\n= 5"
+    },
+    {
+        "question": "Tentukan invers dari matriks [[1,2],[3,4]]",
+        "options": [["-2,1","1.5,-0.5"], ["2,-1","-1.5,0.5"], ["1,2","3,4"], ["4,3","2,1"]],
+        "correct_answer": ["-2,1","1.5,-0.5"],
+        "hint": "det = (1×4) - (2×3) = -2\nInvers = 1/det × [[4,-2],[-3,1]]"
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "question": "Jika 3x + 5 = 20, berapakah nilai x?",
+        "options": ["5", "7", "3", "4"],
+        "correct_answer": "5",
+        "hint": "3x + 5 = 20\n3x = 20 - 5\n3x = 15\nx = 15 ÷ 3\nx = 5"
+    },
+    {
+        "question": "Faktorkan x² + 5x + 6",
+        "options": ["(x+2)(x+3)", "(x+1)(x+6)", "(x+3)(x+2)", "(x-2)(x-3)"],
+        "correct_answer": "(x+2)(x+3)",
+        "hint": "Cari dua bilangan yang:\n- Jumlahnya = 5\n- Hasil kalinya = 6\nBilangan tersebut adalah 2 dan 3\nSehingga faktornya (x+2)(x+3)"
+    },
+    {
+        "question": "Luas sebuah persegi panjang adalah 48 cm². Jika panjangnya 8 cm, berapakah lebarnya?",
+        "options": ["6 cm", "4 cm", "8 cm", "12 cm"],
+        "correct_answer": "6 cm",
+        "hint": "Luas = panjang × lebar\n48 = 8 × lebar\nlebar = 48 ÷ 8\nlebar = 6 cm"
+    },
+    {
+        "question": "Berapakah hasil dari (-3)² × 4?",
+        "options": ["36", "-36", "9", "-9"],
+        "correct_answer": "36",
+        "hint": "(-3)² = 9\n9 × 4 = 36"
+    },
+    {
+        "question": "Selesaikan: 2y - 7 = 11",
+        "options": ["9", "7", "8", "10"],
+        "correct_answer": "9",
+        "hint": "2y - 7 = 11\n2y = 11 + 7\n2y = 18\ny = 18 ÷ 2\ny = 9"
+    },
+    {
+        "question": "Tentukan gradien garis yang melalui titik (2,3) dan (4,7)",
+        "options": ["2", "3", "4", "1"],
+        "correct_answer": "2",
+        "hint": "Gradien = (y₂-y₁)/(x₂-x₁)\n= (7-3)/(4-2)\n= 4/2\n= 2"
+    },
+    {
+        "question": "Berapakah akar kuadrat dari 144?",
+        "options": ["12", "14", "10", "16"],
+        "correct_answer": "12",
+        "hint": "√144 = 12 karena 12 × 12 = 144"
+    },
+    {
+        "question": "Jika 4p = 24, berapakah nilai 2p?",
+        "options": ["12", "6", "8", "10"],
+        "correct_answer": "12",
+        "hint": "4p = 24\np = 24 ÷ 4 = 6\nmaka 2p = 2 × 6 = 12"
+    },
+    {
+        "question": "Selesaikan: -2(x + 3) = 14",
+        "options": ["-4", "-8", "-10", "-7"],
+        "correct_answer": "-7",
+        "hint": "-2(x + 3) = 14\nx + 3 = -7\nx = -10"
+    },
+    {
+        "question": "Berapakah keliling lingkaran dengan jari-jari 7 cm? (π = 3.14)",
+        "options": ["43.96 cm", "38.48 cm", "153.86 cm", "21.98 cm"],
+        "correct_answer": "43.96 cm",
+        "hint": "Keliling = 2πr\n= 2 × 3.14 × 7\n= 43.96 cm"
+    }
+]
